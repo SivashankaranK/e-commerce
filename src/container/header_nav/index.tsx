@@ -1,5 +1,8 @@
 export const HeaderNav = () => {
+
   return (
-    <div>HeaderNav</div>
+    <div>
+      Header Nav
+    </div>
   )
 }
