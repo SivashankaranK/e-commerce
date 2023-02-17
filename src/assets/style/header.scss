@@ -1,15 +1,13 @@
 .header_bar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #03484D;
   height: 68px;
-  gap: 41px;
-
-
+  color: #FFFFFF;
 
   .search_bar {
-    width: 534px;
+    width: 60%;
     height: 39px;
     background: #FFFFFF;
     border-radius: 6px;
@@ -20,10 +18,13 @@
     font-weight: 400;
     font-size: 13px;
     color: #ABA3A3;
+    // margin-right: 41px;
+
     // box-sizing: border-box;
 
     .search_categories {
       padding-left: 17.5008px;
+      width: 86px;
 
       .search_categories_down_arrow {
         padding-left: 18px;
@@ -42,7 +43,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 70%;
+      width: 100%;
 
       .search__input_area {
         font-family: 'Century Gothic';
@@ -51,14 +52,14 @@
         font-size: 13px;
         font-style: normal;
         border: none;
-        width: 270px;
+        width: 100%;
         height: 16px;
       }
 
       .search_button {
         background: #B6B6B6;
         width: 43px;
-        height: 31px;
+        height: 39px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -81,25 +82,27 @@
 
   .order_tabs {
     height: 45px !important;
+    width: 134.5px;
+    // padding-right: 41px;
+
 
     .order_elements {
-      color: #FFFFFF;
       height: 13px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       padding-bottom: 4px;
 
-      .orderIcon_element{
+      .orderIcon_element {
 
         width: 25px;
+
         .order_icons {
           // width: 132px;
           padding-right: 4px;
           height: 13px;
         }
       }
-
 
       .order_text {
         font-family: 'Century Gothic';
@@ -110,5 +113,56 @@
 
       }
     }
+  }
+
+  .contact_details {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    width: 114px;
+    // padding-right: 41px;
+
+
+    .contact_details_now {
+      font-size: 9px;
+    }
+
+    .headphone_details {
+
+      display: flex;
+      align-items: center;
+
+      .headphones_icon {
+        width: 19px;
+        height: 19px;
+      }
+
+      .headphones_number {
+        padding-left: 3px;
+        font-size: 13px;
+      }
+    }
+
+
+    .sig_in_contact {
+      font-size: 13px;
+    }
+  }
+
+
+  .user_details {
+    width: 155.5px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+
+    .cart_contenet {
+      display: flex;
+      align-items: center;
+      gap: 2px
+    }
+
   }
 }

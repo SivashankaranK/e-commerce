@@ -4,10 +4,10 @@ import { Header, HeaderNav } from './container'
 
 const App: Component = () => {
   return (
-    <Container>
+    <>
       <Header />
       <HeaderNav />
-    </Container>
+    </>
   );
 };
 

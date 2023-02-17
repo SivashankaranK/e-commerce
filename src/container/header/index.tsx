@@ -1,8 +1,13 @@
-import logo from '../../assets/icons/logo.svg';
 import '../../assets/style/header.scss';
+import { headerOrderList } from '../../utils';
+
+import logo from '../../assets/icons/logo.svg';
 import arrowIcon from '../../assets/icons/arrow.svg';
 import searchIcon from '../../assets/icons/search.svg';
-import { headerOrderList } from '../../utils';
+import headphonesIcon from '../../assets/icons/headphones.svg';
+import cartIcon from '../../assets/icons/cart.svg';
+import heartIcon from '../../assets/icons/heart.svg';
+import userIcon from '../../assets/icons/user.svg';
 
 export const Header = () => {
 
@@ -29,7 +34,6 @@ export const Header = () => {
       </div>
 
       <div class='order_tabs'>
-
         {headerOrderList.map((it) => {
           return (
             <div class='order_elements'>
@@ -42,7 +46,28 @@ export const Header = () => {
           )
         })
         }
+      </div>
 
+      <div class='contact_details'>
+        <div class='contact_details_now'>
+          Call Us Now
+        </div>
+        <div class='headphone_details'>
+          <img src={headphonesIcon} alt='headphonesIcon' class='headphones_icon' />
+          <span class='headphones_number'>+011 5827918</span>
+        </div>
+        <div class='sig_in_contact'>
+          Sign In
+        </div>
+      </div>
+
+      <div class='user_details'>
+        <img src={userIcon} alt='userIcon' />
+        <img src={heartIcon} alt='heartIcon' />
+        <span class='cart_contenet'>
+          <img src={cartIcon} alt='cartIcon' />
+          Cart
+        </span>
       </div>
     </div>
   )
