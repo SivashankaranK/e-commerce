@@ -23,6 +23,7 @@
     // box-sizing: border-box;
 
     .search_categories {
+      display: flex;
       padding-left: 17.5008px;
       // width: 133px;
 
@@ -212,3 +213,43 @@
   }
 
 }
+
+
+@media screen and (max-width:767px) {
+
+  .header_bar {
+    position: relative;
+    // justify-content: space-between;
+
+    .contact_details {
+      display: block;
+      visibility: hidden;
+    }
+
+    .search_bar {
+      position: absolute;
+      top: 70px;
+      width: 99% !important;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .all_categories {
+      display: inline
+    }
+  }
+}
+
+
+.burgger_contents{
+  margin: 10px;
+
+  .burgger_icon_content{
+    height: 44px;
+    padding: 5px;
+
+    .burgger_icon{
+      height: 100%;
+    }
+  }
+}
+

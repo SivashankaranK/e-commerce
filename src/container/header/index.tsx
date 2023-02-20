@@ -9,8 +9,12 @@ import cartIcon from '../../assets/icons/cart.svg';
 import heartIcon from '../../assets/icons/heart.svg';
 import userIcon from '../../assets/icons/user.svg';
 import menuIcon from '../../assets/icons/menu-burger.svg';
+import { createSignal } from 'solid-js';
+import { Offcanvas } from 'solid-bootstrap';
 
 export const Header = () => {
+
+  const [isMenuEnabled, setMenuState] = createSignal(false);
 
   return (
     <div class="header_bar">
@@ -72,8 +76,32 @@ export const Header = () => {
       </div>
 
       <div class='burger_menu'>
-        <img class='menu_icon' src={menuIcon} alt='menuIcon' />
+        <img class='menu_icon' src={menuIcon} alt='menuIcon' onClick={() => setMenuState((prev) => !prev)} />
       </div>
-    </div>
+      <Offcanvas
+        show={isMenuEnabled()}
+        onHide={() => setMenuState(false)}
+        placement={'end'}
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title />
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          {headerOrderList.map((it) => {
+            return (
+              <div class='burgger_contents'>
+                <span class='burgger_icon_content'>
+                  <img src={it.darkLogo || it.logo} alt={it.value} class='burgger_icon'/>
+                </span>
+                <span class='burgger_label'>
+                  {it.label}
+                </span>
+                <span class='seperator' />
+              </div>
+            )
+          })}
+        </Offcanvas.Body>
+      </Offcanvas>
+    </div >
   )
 }
