@@ -8,6 +8,7 @@ import headphonesIcon from '../../assets/icons/headphones.svg';
 import cartIcon from '../../assets/icons/cart.svg';
 import heartIcon from '../../assets/icons/heart.svg';
 import userIcon from '../../assets/icons/user.svg';
+import menuIcon from '../../assets/icons/menu-burger.svg';
 
 export const Header = () => {
 
@@ -19,7 +20,7 @@ export const Header = () => {
 
       <div class='search_bar'>
         <div class='search_categories'>
-          <span>
+          <span class='all_categories'>
             All categories
           </span>
           <img src={arrowIcon} alt='arrow' class='search_categories_down_arrow' />
@@ -68,6 +69,10 @@ export const Header = () => {
           <img src={cartIcon} alt='cartIcon' />
           Cart
         </span>
+      </div>
+
+      <div class='burger_menu'>
+        <img class='menu_icon' src={menuIcon} alt='menuIcon' />
       </div>
     </div>
   )

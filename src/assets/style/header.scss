@@ -24,7 +24,7 @@
 
     .search_categories {
       padding-left: 17.5008px;
-      width: 86px;
+      // width: 133px;
 
       .search_categories_down_arrow {
         padding-left: 18px;
@@ -156,7 +156,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    justify-content: space-evenly;
 
     .cart_contenet {
       display: flex;
@@ -165,4 +165,50 @@
     }
 
   }
+
+  .burger_menu {
+    display: none;
+
+  }
+}
+
+
+@media (max-width:1700px) {
+  .search_bar {
+    width: 40% !important;
+
+    .search_categories {
+      padding-left: unset !important;
+    }
+
+    .all_categories {
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (max-width:1030px) {
+
+  .search_bar {
+    width: 50% !important;
+  }
+
+  .order_tabs {
+    display: none;
+  }
+
+  .contact_details {
+    display: none;
+  }
+
+  .burger_menu {
+    display: block !important;
+    height: 34px;
+
+    .menu_icon {
+      height: 100%;
+    }
+  }
+
 }
