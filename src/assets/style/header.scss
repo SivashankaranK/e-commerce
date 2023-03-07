@@ -92,7 +92,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      padding-bottom: 4px;
+      margin-bottom: 4px;
 
       .orderIcon_element {
 
@@ -239,17 +239,63 @@
   }
 }
 
+.burger_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-.burgger_contents{
-  margin: 10px;
+  .burgger_contents {
+    margin: 10px;
+    border-left: solid;
+    border-color: #03484D;
 
-  .burgger_icon_content{
-    height: 44px;
-    padding: 5px;
+    .burgger_label {
+      font-size: 20px;
+      padding: 5px;
+    }
+  }
 
-    .burgger_icon{
-      height: 100%;
+  .footer_content {
+    border-top: solid;
+    border-color: #03484D;
+
+    .icon {
+      height: 30px;
+    }
+
+    .contact_details {
+      display: flex;
+      flex-direction: column;
+
+      .label {
+        font-size: 10px;
+        font-weight: 900;
+      }
+
+      .phone_number {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      span {
+        margin: 2px;
+      }
+    }
+
+    .sign_in {
+      border-top: solid;
+      border-color: #03484D;
+      margin-top: 17px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 5px;
     }
   }
 }
 
+.offcanvas{
+  width: 300px;
+}
