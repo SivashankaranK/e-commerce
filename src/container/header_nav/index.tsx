@@ -4,7 +4,13 @@ export const HeaderNav = () => {
 
   return (
     <div class='header_navv_parent'>
-      Header Nav
+
+      <div class='category'>
+        Left
+      </div>
+      <div class='social_platforms'>
+        Right
+      </div>
     </div>
   )
 }

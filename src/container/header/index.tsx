@@ -94,9 +94,6 @@ export const Header = () => {
             {headerOrderList.map((it) => {
               return (
                 <div class='burgger_contents'>
-                  {/* <span class='burgger_icon_content'>
-                  <img src={it.darkLogo || it.logo} alt={it.value} class='burgger_icon' />
-                </span> */}
                   <span class='burgger_label'>
                     {it.label}
                   </span>

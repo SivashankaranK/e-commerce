@@ -4,4 +4,20 @@
     display: flex;
     align-items: center;
     color: #ffff;
+    justify-content: space-between;
+
+    .category {
+        margin-left: 4%;
+    }
+
+    .social_platforms {
+        margin-right: 6%;
+    }
+}
+
+
+@media (max-width: 1030px) {
+    .header_navv_parent {
+        display: none;
+    }
 }
